@@ -6,7 +6,7 @@ namespace homework_6_2
     {
         static void Main(string[] args)
         {
-            double volume1, price1, xaverage1, volume2, price2, xaverage2;
+            double volume1, price1, number1, xaverage1, volume2, price2, number2, xaverage2;
             string name1, name2, compare;
             int i = 0;
 
@@ -18,8 +18,10 @@ namespace homework_6_2
             volume1 = double.Parse(Console.ReadLine());
             Console.Write("Input quantity of goods : ");
             price1 = double.Parse(Console.ReadLine());
+            Console.Write("Input number of products : ");
+            number1 = double.Parse(Console.ReadLine());
 
-            xaverage1 = price1 / volume1;
+            xaverage1 = price1 / volume1*number1;
             Console.Write("Average volume : {0} baht per unit", xaverage1);
 
 
@@ -36,8 +38,10 @@ namespace homework_6_2
                 volume2 = double.Parse(Console.ReadLine());
                 Console.Write("Input quantity of goods : ");
                 price2 = double.Parse(Console.ReadLine());
+                Console.Write("Input number of products : ");
+                number2 = double.Parse(Console.ReadLine());
 
-                xaverage2 = price2 / volume2;
+                xaverage2 = price2 / volume2*number2;
                 Console.Write("Average volume : {0} baht per unit", xaverage2);
 
 
